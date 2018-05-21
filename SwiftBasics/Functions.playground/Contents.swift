@@ -40,6 +40,7 @@ func multiplication(Oprand1 a: Int, Oparand2 b: Int, result: inout Int) {
     
     result = a * b
 }
+
 var res = 0
 multiplication(Oprand1: 10, Oparand2: 20, result: &res)
 print(res)
@@ -95,6 +96,31 @@ func doOperation(_ function: (Int, Int) -> ()) {
 doOperation(mathFuntion)
 
 // Closures
+
+func someFunction (closure: () -> Bool) {
+    
+    print("someFunction")
+    closure()
+}
+
+someFunction { () -> Bool in
+    print("Closure")
+    return true
+}
+
+var colors = ["Red", "Green", "Blue", "Yellow", "White", "Black"]
+
+var sortedColors = colors.sorted() { $0 < $1 }
+
+print(sortedColors)
+
+
+
+
+
+
+
+
 
 
 
