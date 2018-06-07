@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SliderMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9w-19-F7i">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROX-Hu-ypD">
+                                        <rect key="frame" x="8" y="28" width="164" height="50"/>
+                                        <color key="backgroundColor" red="0.36217785427101534" green="0.72277109390196381" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="DHa-8a-dzE"/>
+                                        </constraints>
+                                        <state key="normal" title="Menu1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VB-nI-zgi">
+                                        <rect key="frame" x="8" y="86" width="164" height="50"/>
+                                        <color key="backgroundColor" red="0.36217785429999999" green="0.72277109390000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Aaw-WG-8cv"/>
+                                        </constraints>
+                                        <state key="normal" title="Menu2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwm-St-uRk">
+                                        <rect key="frame" x="8" y="144" width="164" height="50"/>
+                                        <color key="backgroundColor" red="0.36217785429999999" green="0.72277109390000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Menu3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NL9-jB-nXV">
+                                        <rect key="frame" x="8" y="202" width="164" height="50"/>
+                                        <color key="backgroundColor" red="0.36217785429999999" green="0.72277109390000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Menu4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQK-jX-Wnx">
+                                        <rect key="frame" x="8" y="260" width="164" height="50"/>
+                                        <color key="backgroundColor" red="0.36217785429999999" green="0.72277109390000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Menu5">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbg-k6-awh">
+                                        <rect key="frame" x="8" y="318" width="164" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.36217785429999999" green="0.72277109390000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Menu6">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NL9-jB-nXV" secondAttribute="trailing" constant="8" id="Jrc-op-d74"/>
+                                    <constraint firstItem="kQK-jX-Wnx" firstAttribute="leading" secondItem="T9w-19-F7i" secondAttribute="leading" constant="8" id="LZP-4R-FbZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ROX-Hu-ypD" secondAttribute="trailing" constant="8" id="M6J-WC-XGx"/>
+                                    <constraint firstItem="ROX-Hu-ypD" firstAttribute="top" secondItem="T9w-19-F7i" secondAttribute="top" constant="28" id="OPI-UT-YwO"/>
+                                    <constraint firstItem="NL9-jB-nXV" firstAttribute="leading" secondItem="T9w-19-F7i" secondAttribute="leading" constant="8" id="Pbn-9v-uom"/>
+                                    <constraint firstItem="4VB-nI-zgi" firstAttribute="height" secondItem="Uwm-St-uRk" secondAttribute="height" id="PeL-RH-lfY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uwm-St-uRk" secondAttribute="trailing" constant="8" id="VYx-Kz-8Gp"/>
+                                    <constraint firstItem="4VB-nI-zgi" firstAttribute="top" secondItem="ROX-Hu-ypD" secondAttribute="bottom" constant="8" id="WUR-MQ-fyW"/>
+                                    <constraint firstItem="NL9-jB-nXV" firstAttribute="height" secondItem="kQK-jX-Wnx" secondAttribute="height" id="WvO-QF-TE1"/>
+                                    <constraint firstItem="4VB-nI-zgi" firstAttribute="leading" secondItem="T9w-19-F7i" secondAttribute="leading" constant="8" id="Xl0-0c-IYz"/>
+                                    <constraint firstItem="kQK-jX-Wnx" firstAttribute="top" secondItem="NL9-jB-nXV" secondAttribute="bottom" constant="8" id="Y6A-0M-9Zr"/>
+                                    <constraint firstAttribute="trailing" secondItem="4VB-nI-zgi" secondAttribute="trailing" constant="8" id="deC-EX-RnG"/>
+                                    <constraint firstAttribute="trailing" secondItem="kQK-jX-Wnx" secondAttribute="trailing" constant="8" id="e4W-9A-PH8"/>
+                                    <constraint firstItem="Uwm-St-uRk" firstAttribute="top" secondItem="4VB-nI-zgi" secondAttribute="bottom" constant="8" id="fGP-Tz-Esk"/>
+                                    <constraint firstItem="ROX-Hu-ypD" firstAttribute="leading" secondItem="T9w-19-F7i" secondAttribute="leading" constant="8" id="kZ0-Ll-j88"/>
+                                    <constraint firstItem="NL9-jB-nXV" firstAttribute="top" secondItem="Uwm-St-uRk" secondAttribute="bottom" constant="8" id="khi-o4-tUy"/>
+                                    <constraint firstItem="Uwm-St-uRk" firstAttribute="height" secondItem="NL9-jB-nXV" secondAttribute="height" id="mKz-wl-gq5"/>
+                                    <constraint firstAttribute="width" constant="180" id="oqQ-yv-1hJ"/>
+                                    <constraint firstItem="Uwm-St-uRk" firstAttribute="leading" secondItem="T9w-19-F7i" secondAttribute="leading" constant="8" id="ujz-LO-0Y3"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jCu-3T-rFt" appends="YES" id="Gwh-XC-Gwa"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5su-DB-faI">
+                                <rect key="frame" x="262" y="20" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <action selector="menuButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W83-DS-C5L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77310833035729121" green="1" blue="0.32440748324887203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T9w-19-F7i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dz5-uj-gHQ"/>
+                            <constraint firstItem="T9w-19-F7i" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pYf-TW-Ih1"/>
+                            <constraint firstItem="T9w-19-F7i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zyo-w0-aRP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ihB-WT-YgR" appends="YES" id="PRx-NK-Yby"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="menuLeadingConstraint" destination="dz5-uj-gHQ" id="YIC-XX-vmb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="ihB-WT-YgR">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="edgePanGesture:" destination="BYZ-38-t0r" id="OvG-nL-29k"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="jCu-3T-rFt">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="Q6N-BB-Qcz"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="133.09859154929578"/>
+        </scene>
+    </scenes>
+</document>

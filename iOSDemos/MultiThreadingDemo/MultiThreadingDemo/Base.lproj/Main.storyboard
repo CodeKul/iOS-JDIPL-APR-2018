@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiThreadingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKX-yd-ph2">
+                                <rect key="frame" x="145" y="269" width="30" height="30"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="goButtonTouchInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yc5-8m-XCN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77310833040000004" green="1" blue="0.32440748320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mKX-yd-ph2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0xN-GP-Qzs"/>
+                            <constraint firstItem="mKX-yd-ph2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NpQ-ZF-WdX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="133"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="fK4-KF-sdW">
+            <objects>
+                <viewController storyboardIdentifier="ImageViewController" id="Krc-YV-fCH" customClass="ImageViewController" customModule="MultiThreadingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QNe-G8-a6q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bxg-H9-Fd0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Jr6-SI-Oha">
+                                <rect key="frame" x="142" y="266" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bxg-H9-Fd0" firstAttribute="trailing" secondItem="uZA-d1-AJ4" secondAttribute="trailing" id="B0O-Ox-3wI"/>
+                            <constraint firstItem="Jr6-SI-Oha" firstAttribute="centerX" secondItem="QNe-G8-a6q" secondAttribute="centerX" id="LQb-lS-sG9"/>
+                            <constraint firstItem="Jr6-SI-Oha" firstAttribute="centerY" secondItem="QNe-G8-a6q" secondAttribute="centerY" id="Oaa-Ff-ztD"/>
+                            <constraint firstItem="bxg-H9-Fd0" firstAttribute="leading" secondItem="uZA-d1-AJ4" secondAttribute="leading" id="QbH-sX-cdc"/>
+                            <constraint firstItem="bxg-H9-Fd0" firstAttribute="top" secondItem="QNe-G8-a6q" secondAttribute="top" id="byT-El-AGV"/>
+                            <constraint firstItem="bxg-H9-Fd0" firstAttribute="bottom" secondItem="uZA-d1-AJ4" secondAttribute="bottom" id="oXj-xe-y6N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uZA-d1-AJ4"/>
+                    </view>
+                    <connections>
+                        <outlet property="loader" destination="Jr6-SI-Oha" id="ZaT-f4-qlY"/>
+                        <outlet property="myImageView" destination="bxg-H9-Fd0" id="ySN-Lc-dws"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPd-W5-kLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.5" y="132.04225352112675"/>
+        </scene>
+    </scenes>
+</document>
